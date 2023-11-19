@@ -1,7 +1,7 @@
 {
    "action": {
       "default_icon": {
-         "128": "128.png"
+         "128": "image.png"
       },
       "default_popup": "popup.html"
    },
@@ -33,13 +33,13 @@
          "*://*.openai.com/*"
       ]
    },
-   "description": "a description",
+   "description": "Token Bin is a Chrome extension that tracks the number of tokens used in a conversation with ChatGPT, comparing this to the backend model's token limit. This allows users to identify missing context within the model's inherent context window. By highlighting and reintegrating crucial omitted details in subsequent requests, Token Bin ensures that ChatGPT maintains a comprehensive understanding of the conversation. It also provides valuable metrics like token consumption, model information, and latency data, enabling a more nuanced analysis of the interaction.",
    "icons": {
       "128": "128.png"
    },
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlCWQXY5EWliqIQSMmQKk6dNx9Yfvqz5GKtDnJK5usN026HuCHvUXRUOUlgiovChdRctYReoe7kezhKlfnQr/HKkmGWhDah2hgYBsYvEmZZdFgZjYiUzlsdkUX4iSkzA3rYXMuaTwduxs9TLinMqb70QtzdEfR1fUqrxKAkCwDEN5hClZke109m2bupDbZ5jOYi9wVCQKf4TciEf8vsN2+Sc8saD/VZi0XiFqJ0Ozm2JZuvul7QAJkAblDB4//nRkI7w2g9bzTPQXUISCpBtjJJU07O8JcESyWkAwDIjjyt7MvOCDS7C1ieN0WmEnoqhVzauzDdqcAld5ClKrf8GvxwIDAQAB",
    "manifest_version": 3,
-   "name": "ChatGPT Power Tools",
+   "name": "Token Bin",
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0.1",
    "devtools_page": "devtools.html"
