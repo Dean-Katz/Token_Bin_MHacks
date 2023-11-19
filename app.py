@@ -66,7 +66,6 @@ def meta_info():
     data = request.data.decode('utf-8')
     insert_into_db(data)
     return insert_into_db(data)
-333
 def insert_into_db(data):
     url = os.environ.get("SUPABASE_URL")
     key = os.environ.get("SUPABASE_KEY")
