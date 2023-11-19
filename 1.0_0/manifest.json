@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "128.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "worker.js"
+   },
+   "content_scripts": [
+      {
+         "js": [
+            "content.js"
+         ],
+         "matches": [
+            "*://*.openai.com/*"
+         ]
+      }
+   ],
+   "permissions": [
+      "webRequest",
+      "nativeMessaging",
+      "tabs",
+      "clipboardWrite",
+      "scripting"
+   ],
+   "host_permissions": [
+      "https://chat.openai.com/*"
+   ],
+   "externally_connectable": {
+      "matches": [
+         "*://*.openai.com/*"
+      ]
+   },
+   "description": "a description",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlCWQXY5EWliqIQSMmQKk6dNx9Yfvqz5GKtDnJK5usN026HuCHvUXRUOUlgiovChdRctYReoe7kezhKlfnQr/HKkmGWhDah2hgYBsYvEmZZdFgZjYiUzlsdkUX4iSkzA3rYXMuaTwduxs9TLinMqb70QtzdEfR1fUqrxKAkCwDEN5hClZke109m2bupDbZ5jOYi9wVCQKf4TciEf8vsN2+Sc8saD/VZi0XiFqJ0Ozm2JZuvul7QAJkAblDB4//nRkI7w2g9bzTPQXUISCpBtjJJU07O8JcESyWkAwDIjjyt7MvOCDS7C1ieN0WmEnoqhVzauzDdqcAld5ClKrf8GvxwIDAQAB",
+   "manifest_version": 3,
+   "name": "ChatGPT Power Tools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "devtools_page": "devtools.html"
+}
